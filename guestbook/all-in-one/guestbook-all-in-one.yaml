@@ -130,6 +130,8 @@ spec:
         app: guestbook
         tier: frontend
     spec:
+      nodeSelector:
+        kubernetes.io/arch: arm64
       containers:
       - name: php-redis
         image: danielhelfand/gb-frontend
